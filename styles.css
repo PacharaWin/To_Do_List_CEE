@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+body{
+	font-family: 'Inter', sans-serif;
+	background:#17202A;
+}
+#app-name{
+	font-size: 6em;
+	font-weight: bolder;
+	margin: 50px 0 0 0;
+	text-align: center;
+	color:#EAECEE;
+}
+section{
+  margin: 30px 5px ;
+}
+#course-edit-table{
+  border-color: #6FE1DC;
+	border-radius: 8px;
+  border-style: solid;
+}
+#main-table{
+  border-color: #FAE875;
+	border-radius: 6px;
+  border-style: solid;
+}
+#second-table{
+	border-radius: 8px;
+	border-collapse: collapse;
+}
+#course-edit-table,#main-table > thead{
+	background: #F7F9F6;
+}
+#second-table > thead{
+	background: #555;
+	color: white;
+}
+
+#main-table td,#main-table th,#second-table td,#second-table th,#course-edit-table td,#course-edit-table th{
+	padding: 5px 10px;
+  text-align: left;
+	font-weight: lighter;
+}
+#task-to-add, #course-to-add, #deadline-to-add,#course-to-edit{
+	padding:5px 10px;
+	border-radius: 8px;
+	border:1px solid #AAA;
+}
+.task-done{
+	padding:5px 10px;
+	border-radius: 8px;
+	background: #D2F8B6;
+}
+.task-late{
+	padding:5px 10px;
+	border-radius: 8px;
+	background:#FADBD8;
+}
+.task-less-than-1-hour,.task-less-than-1-day{
+	padding:5px 10px;
+	border-radius: 8px;
+	background:#FCF3CF ;
+}
+.submit-row,.delete-row,.done-row, #add-newrow, #add-course-option, #remove-course-option{
+	border-radius: 8px;
+	padding: 5px 10px;
+	border: 1px solid #AAA;
+	background: white;
+	width: auto;
+	cursor: pointer;
+}
+.submit-row:hover,.delete-row:hover,.done-row:hover, #add-newrow:hover, #add-course-option:hover, #remove-course-option:hover{
+	background: rgb(255, 200, 105);
+	color:white;
+}
+.section-title{
+	font-size: 2em;
+	font-weight: bold;
+	margin: 10px 0 10px 0;
+  text-align: center;
+	color:#EAECEE;
+}
+table{
+  width:auto;
+  margin: auto;
+	background: #F7F9F6;
+	box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+}
+footer{
+padding: 1% 1% 2%;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+  justify-content: center;
+  }
+  
+  
+  @media (max-width: 800px) {
+	.flex-item-right, .flex-item-left {
+	  flex: 100%;
+	}
+  }

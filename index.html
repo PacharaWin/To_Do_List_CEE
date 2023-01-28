@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>To-Do-List</title>
+</head>
+
+<body>
+  <section>
+    <h1 id="app-name">To-Do-List</h1>
+  </section>
+  <div>
+
+  </div>
+  <div class="flex-container">
+    <section class="flex-item-left">
+      <h2 class="section-title">Edit Course</h2>
+      <table id="course-edit-table">
+        <tr>
+          <th><label for="course-to-edit">Course Name</label></th>
+        </tr>
+        <tr>
+          <th><input id='course-to-edit' type='text' /></th>
+          <th><button type="button" id="add-course-option" onclick="addCourseOption()">Add</button></th>
+          <th><button type="button" id="remove-course-option" onclick="removeCourseOption()">Remove</button></th>
+        </tr>
+      </table>
+    </section>
+    <section class="flex-item-right">
+      <h2 class="section-title">Add New Assignment</h2>
+      <table id="main-table">
+        <thead>
+          <tr>
+            <th><label for="course-to-add">Course Name</label></th>
+            <th><label for="task-to-add">Task Name</label></th>
+            <th><label for="deadline-to-add">Deadline</label></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="main-table-body">
+          <tr id="add-row">
+            <td><select id="course-to-add"></select></td>
+            <td><input id="task-to-add" type="text" /></td>
+            <td><input type="datetime-local" id="deadline-to-add"></td>
+            <td><button type="button" id="add-newrow" onclick="addNewItem()">Add</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+  <section>
+    <h2 class="section-title">Your Assignment</h2>
+    <table id="second-table">
+      <thead>
+        <tr>
+          <th>Course Name</th>
+          <th>Task Name</th>
+          <th>Deadline</th>
+          <th>Remaining Time</th>
+          <th>Mark as done</th>
+          <th>Clear</th>
+        </tr>
+      </thead>
+      <tbody id="assignment-list"></tbody>
+    </table>
+  </section>
+  <footer>
+    <p style="text-align:center; color:white;font-size:small;">This website is part of Computer Essential Engineering
+      course</p>
+  </footer>
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
